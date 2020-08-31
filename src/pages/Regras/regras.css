@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&family=Poppins&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  --border: #F06046;
+  --black: #38393a;
+  --hover: #8a3c27;
+}
+
+.rules {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+
+  background-color: #8f8f8fd5;
+}
+
+.rules .image-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.rules .image-container img{
+  width: 10rem;
+  flex-shrink: 0;
+}
+
+.rules-table {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 50%;
+}
+
+.rules-table article {
+	border: 3px solid var(--border);
+	font: 300 1rem Archivo;
+	color: var(--black);
+  text-align: center;
+  padding: 0 0.6rem;
+}
+
+.rules-table article h1 {
+  text-align: center;
+	font: 700 1rem Poppins;
+	color: var(--black);
+ 	padding: 10px;
+}
+
+.rules-table article ul {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.rules-table article ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+}
+
+.rules-table article p {
+  align-items: center;
+  text-align: center;
+  font: 300 1rem Archivo;
+  margin-bottom: 10px;
+}
+
+.button-exit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 7rem;
+  height: 2rem;
+  border-radius: 0.8rem;
+
+  background: var(--border);
+  font: 700 1rem Archivo;
+  cursor: pointer;
+  flex-shrink: 0;
+  border: none;
+  transition: color .2s;
+}
+
+.button-exit:hover{
+  background: var(--hover);
+}
+
+@media (max-width: 768px) {
+  .rules { 
+    display: flex;
+    flex-direction: column;
+  }
+
+  .rules-table {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+  }
+}

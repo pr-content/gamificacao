@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  --background:  #63D5D6;
+  --focus: #9400d3;
+  --button: #FF5C91;
+  --primary: #FFF;
+}
+
+button, input {
+  border: none;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+
+  max-width: 100vw;
+  max-height: 100vh;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+
+  background-image: url("../../img/background.png");
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.header header #click {
+  margin-bottom: 20px;
+}
+
+.header header button img {
+  display: flex;
+  width: 4rem;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.header header button img:hover {
+  opacity: 0.7;
+}
+
+.heading {
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+}
+
+.heading h2 {
+  font: 700 1.5rem Poppins;
+  text-align: center;
+}
+
+.wrapper-categories label {
+  font: 600 1.2rem Archivo;
+  display: flex;
+  
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.categories{
+  width: 100%;
+  height: 70px;
+
+	background: var(--background);
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.categories input {
+  width: 200px;
+  height: 40px;
+
+  text-align: center;
+  justify-content: center;
+
+  border-radius: 5px;
+  margin: 1rem 0;
+  text-transform: uppercase;
+
+  font: 400 1.2rem Archivo; 
+}
+
+.categories input:focus {
+  width: 200px;
+  height: 40px;
+  border: 2px solid var(--focus);
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  padding: 20px;
+}
+
+.buttons-container #enviar {
+	width: 200px;
+	height: 50px;
+  background: var(--button);
+  color: var(--primary);
+
+	border-radius: 5px;
+	font: 700 1rem Archivo;
+	cursor: pointer;
+}
+
+#conquista {
+	width: 200px;
+	height: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+	background: var(--button);
+  color: var(--primary);
+  
+	border-radius: 5px;
+	font: 700 1rem Archivo;
+	cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+  #root {
+    background-image: url("../../img/background.png");
+  }
+
+  .header header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .header header button img {
+    width: 3rem;
+  }
+
+  .buttons-container #enviar{
+    margin-right: 20px;
+  }
+}
+
+form {
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+}
+
+form .categories input {
+  animation: move 500ms;
+}
+
+form .categories input {
+  animation: move 400ms;
+  animation-delay: 150ms;
+  animation-fill-mode: backwards;
+}
+
+@keyframes move {
+  from {
+    opacity: 0;
+    transform: translateX(-45%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
