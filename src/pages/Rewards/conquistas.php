@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name='viewport' content='width=device-width' initial-scale = '1.0'>
 	<title>Conquistas</title>
-	<link rel="shortcut icon" href="../../img/pr.png" type="image/x-png"/>
+	<link rel="shortcut icon" href="../../assets/pr.png" type="image/x-png"/>
 	<link rel="stylesheet" type="text/css" href="conquistas.css">
 
   <?php

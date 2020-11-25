@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
   <title>Logout</title>
-	<link rel="shortcut icon" href="../../img/pr.png" type="image/x-png"/>
+	<link rel="shortcut icon" href="../../assets/pr.png" type="image/x-png"/>
 </head>
 
 <body>

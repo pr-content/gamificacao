@@ -1,4 +1,3 @@
-const exitButton = document.querySelectorAll('input')
 const clickButton = document.querySelector('#click')
 
 // Pergunta se o usuário quer mesmo sair da página

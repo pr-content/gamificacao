@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name='viewport' content='width=device-width' initial-scale='1.0'>
 	<link rel="stylesheet" type="text/css" href="telasenha.css">
-	<link rel="shortcut icon" href="../../img/pr.png" type="image/x-png"/>
+	<link rel="shortcut icon" href="../../assets/pr.png" type="image/x-png"/>
 	<title>Senhas</title>
 
   <?php
@@ -27,7 +27,7 @@
 </head>
 
 <body> 
-  <div id="root"> 
+  <main id="root"> 
     <?php
   
       //Pega as variáveis pelo método POST
@@ -69,11 +69,11 @@
       $insererespeitavel = "INSERT INTO receberespeitavel VALUES('$respeitavel','$logado')";
       $inserevoluntario = "INSERT INTO recebevoluntario VALUES('$voluntario','$logado')";
     ?>
-      
+   
     <div class="header">
       <header>
         <button href="../Exit/logout.php" id="click">
-          <img src="../../img/buttonsair.png">
+          <img src="../../assets/buttonsair.png">
         </button>
 
         <div class="heading">
@@ -125,7 +125,7 @@
 
       </div>
         
-      <div class="wrapper-categories">	
+      <div class="wrapper-categories">
         <label>	Networking </label>
       </div>
 
@@ -189,12 +189,12 @@
       </div>	
 
       <div class="buttons-container">
-        <input type="submit" value="Enviar" id="enviar" name="enviar">
+        <button type="submit" value="Enviar" id="enviar" name="enviar">
         <button id="conquista" name="enviar">Ver conquistas</button>
       </div>
 
     </form>
-  </div>
-  <script src="index.js"> </script>
+  </main>
+  <script src="index.js"></script>
 </body>
 </html>
