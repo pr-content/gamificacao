@@ -1,6 +1,6 @@
 <div align="center">
 
-  # Gameficação
+  # 📚 Gameficação
   A Gameficação é uma maneira de trazer interatividade à SEMCITEC - PR (Semana de Ciência, Cultura e Tecnologia) e deixar o evento mais divertido aos pesquisadores!
 </div>
 
